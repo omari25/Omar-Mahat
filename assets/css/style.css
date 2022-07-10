@@ -9,10 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* body {
-    background-color: #ebee42;
-} */
-
 /* Home section */
 
 .head-wrapper {
@@ -96,7 +92,6 @@ html{
     font-size: 2vw;
     color: #fff;
     font-weight: lighter;
-    flex: 1;
 }
 
 .name h1 {
@@ -118,6 +113,7 @@ html{
     cursor: pointer;
     background-color: #c91328;
     transition: 0.5s;
+    /* transform: scale(1.2); */
 }
 
 .description .profile {
@@ -125,6 +121,7 @@ html{
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .description .profile img {
     width: 90%;
@@ -139,21 +136,25 @@ html{
 /* Projects section */
 
 .projects {
-    height: 60vw;
+    height: 70vw;
     padding: 20px 100px;
 }
 
-.projects h1, .projects h2 {
+.projects h1 {
+    font-size: 3.5vw;
     text-align: center;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     color: #c91328;
 
 }
 
-/* .projects h2 {
+.projects h2 {
     margin-bottom: 2vw;
-    color: #da374a;
-} */
+    color: #543964;
+    text-align: center;
+    font-size: 2vw;
+
+}
 
 .project-content {
     width: 100%;
@@ -163,8 +164,13 @@ html{
 
 .project-images{
     width: 45%;
-    background-color: #8c72a8;
     margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.project-images:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .project-images a{
@@ -175,6 +181,9 @@ html{
 .project-images p{
     text-align: center;
     padding: 3px;
+    background-color: #8c72a8;
+    color: #fff;
+    font-size: 1.5vw;
 }
 
 .project-images img {
@@ -185,22 +194,25 @@ html{
 /* services section */
 
 .services {
-    height: 640px;
+    height: 45vw;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     background-color: #121111;
-    padding: 4vw 10vw 6vw;
+    padding: 20px 100px;
+    /* padding: 4vw 10vw 6vw; */
 }
 
 .services h1{
-    color: white;
+    color: #da374a;
     margin-bottom: 1vw;
+    font-size: 3.5vw;
+    text-align: center;
 }
 
 .services h2 {
-    color: #da374a;
+    color: #543964;
+    font-size: 2vw;
     margin-bottom: 2vw;
+    text-align: center;
 }
 
 .serv-content {
@@ -213,13 +225,18 @@ html{
     background-color: #312f2f;
     border-radius: 8px;
     width: 30%;
-    height: 40vh;
+    height: 25vw;
     padding: 2vw;
+    text-align: center;
+}
+
+.boxes p{
+    font-size: 1.5vw;
 }
 
 .boxes i {
     color: #da374a;
-    font-size: 32px;
+    font-size: 4vw;
     margin-bottom: 1vw;
 }
 
@@ -233,15 +250,34 @@ html{
 
 .boxes h3 {
     margin-bottom: 1vw;
-
+    font-size: 2vw;
 }
 
 /* About section */
 
 .about{
+    padding: 60px 100px;
     width: 100%;
-    height: 640px;
-    padding: 3vw 10vw;
+    height: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-about{
+    width: 40%;
+    height: 100%;
+}
+
+.left-about img {
+    width: 100%;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
 
 .about h1{
@@ -255,21 +291,11 @@ html{
     color: #da374a;
 }
 
-.about-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
-.left-about img{
-    width: 25vw;
-    height: auto;
-}
-
+/* 
 .right-about {
     width: 60%;
-}
+} */
 
 .right-about p {
     letter-spacing: 1px;
@@ -278,10 +304,12 @@ html{
 
 /* contact section*/
 
+
+
 /* footer */
 
 footer {
-    height: 10vh;
+    height: 60px;
     background-color: #121111;
     padding: 1.5vw 0;
 }
